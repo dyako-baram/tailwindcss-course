@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tail": "npx tailwindcss -i ./main.css -o ./src/css/tailwindcss.css --watch"
+    "tail": "npx tailwindcss -i ./main.css -o ./src/css/tailwindcss.css --watch",
+    "mini": "postcss  ./main.css -o ./src/css/tailwindcss.css"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +13,9 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
     "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
     "tailwindcss": "^3.3.2"
   }
 }
